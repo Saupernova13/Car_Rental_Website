@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9aNRkBPtlLuo3LD1QQi0amc1g1UuW8MP6vZYfzZVo28=",
+  "Hash": "LUr1UWo3+AfBaDUqPByLOn4hgo2KToi8cFLW35QXvD0=",
   "Source": "Sauraav_POE_CLDV",
   "BasePath": "_content/Sauraav_POE_CLDV",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Sauraav_POE_CLDV.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\wwwroot\\css\\lux.css",
+      "SourceId": "Sauraav_POE_CLDV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\wwwroot\\",
+      "BasePath": "_content/Sauraav_POE_CLDV",
+      "RelativePath": "css/lux.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\lux.css"
     },
     {
       "Identity": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\wwwroot\\css\\site.css",
