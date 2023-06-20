@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Sauraav_POE_CLDV.props" />
+</Project>

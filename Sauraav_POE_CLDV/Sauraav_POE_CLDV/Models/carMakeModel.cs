@@ -2,5 +2,7 @@
 {
     public class carMakeModel
     {
+        public int carMakeID { get; set; }
+        public string carMakeDescription { get; set; }
     }
 }

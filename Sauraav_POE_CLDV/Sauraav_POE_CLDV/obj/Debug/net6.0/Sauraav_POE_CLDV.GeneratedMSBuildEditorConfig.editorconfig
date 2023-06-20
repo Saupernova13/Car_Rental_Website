@@ -16,12 +16,152 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Sauraav\Documents\GitHub\cldv6211---cloud-development---poe-Saupernova13\Sauraav_POE_CLDV\Sauraav_POE_CLDV
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carBodyTypeModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyQm9keVR5cGVNb2RlbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carBodyTypeModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyQm9keVR5cGVNb2RlbHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carBodyTypeModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyQm9keVR5cGVNb2RlbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carBodyTypeModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyQm9keVR5cGVNb2RlbHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carBodyTypeModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyQm9keVR5cGVNb2RlbHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carMakeModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyTWFrZU1vZGVsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carMakeModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyTWFrZU1vZGVsc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carMakeModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyTWFrZU1vZGVsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carMakeModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyTWFrZU1vZGVsc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carMakeModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyTWFrZU1vZGVsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carTableModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyVGFibGVNb2RlbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carTableModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyVGFibGVNb2RlbHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carTableModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyVGFibGVNb2RlbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carTableModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyVGFibGVNb2RlbHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/carTableModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2FyVGFibGVNb2RlbHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/driverModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZHJpdmVyTW9kZWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/driverModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZHJpdmVyTW9kZWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/driverModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZHJpdmVyTW9kZWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/driverModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZHJpdmVyTW9kZWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/driverModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZHJpdmVyTW9kZWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/inspectorModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW5zcGVjdG9yTW9kZWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/inspectorModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW5zcGVjdG9yTW9kZWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/inspectorModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW5zcGVjdG9yTW9kZWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/inspectorModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW5zcGVjdG9yTW9kZWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/inspectorModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaW5zcGVjdG9yTW9kZWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/rentalModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVudGFsTW9kZWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/rentalModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVudGFsTW9kZWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/rentalModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVudGFsTW9kZWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/rentalModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVudGFsTW9kZWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/rentalModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVudGFsTW9kZWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/returnTableModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmV0dXJuVGFibGVNb2RlbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/returnTableModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmV0dXJuVGFibGVNb2RlbHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/returnTableModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmV0dXJuVGFibGVNb2RlbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/returnTableModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmV0dXJuVGFibGVNb2RlbHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/returnTableModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmV0dXJuVGFibGVNb2RlbHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Sauraav/Documents/GitHub/cldv6211---cloud-development---poe-Saupernova13/Sauraav_POE_CLDV/Sauraav_POE_CLDV/Views/Shared/Error.cshtml]

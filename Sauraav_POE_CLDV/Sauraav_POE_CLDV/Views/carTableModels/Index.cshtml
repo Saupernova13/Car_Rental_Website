@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Sauraav_POE_CLDV.Models.carTableModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.carModel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.carBodyType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.kilometresTraveled)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.kilometresServed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.available)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.carModel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.carBodyType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kilometresTraveled)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kilometresServed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.available)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.carNo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.carNo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.carNo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

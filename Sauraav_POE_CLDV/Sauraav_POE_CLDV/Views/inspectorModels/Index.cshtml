@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Sauraav_POE_CLDV.Models.inspectorModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.inspectorName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.inspectorEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.inspectorMobile)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.inspectorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.inspectorEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.inspectorMobile)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.inspectorNo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.inspectorNo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.inspectorNo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

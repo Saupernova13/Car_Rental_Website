@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Sauraav_POE_CLDV.props" />
+</Project>

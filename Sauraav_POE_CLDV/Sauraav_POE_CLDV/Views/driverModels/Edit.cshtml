@@ -1,0 +1,49 @@
+﻿@model Sauraav_POE_CLDV.Models.driverModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>driverModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="driverID" />
+            <div class="form-group">
+                <label asp-for="driverName" class="control-label"></label>
+                <input asp-for="driverName" class="form-control" />
+                <span asp-validation-for="driverName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="driverAddress" class="control-label"></label>
+                <input asp-for="driverAddress" class="form-control" />
+                <span asp-validation-for="driverAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="driverEmail" class="control-label"></label>
+                <input asp-for="driverEmail" class="form-control" />
+                <span asp-validation-for="driverEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="driverMobile" class="control-label"></label>
+                <input asp-for="driverMobile" class="form-control" />
+                <span asp-validation-for="driverMobile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
