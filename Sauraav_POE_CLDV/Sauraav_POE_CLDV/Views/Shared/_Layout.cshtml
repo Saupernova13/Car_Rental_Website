@@ -5,46 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Sauraav_POE_CLDV</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Sauraav_POE_CLDV.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/Sauraav_POE_CLDV.styles.css" />
     <link href="~/css/lux.css" rel="stylesheet" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">TheRideYouRent</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarColor02">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link" href="#">Cars</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="carBodyTypeModels" asp-action="Index">CarBodyType</a>
+                            <a class="nav-link" href="#">Drivers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="carMakeModels" asp-action="Index">CarMake</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="carTableModels" asp-action="Index">Car</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="driverModels" asp-action="Index">Driver</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="inspectorModels" asp-action="Index">Inspector</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="returnModels" asp-action="Index">Return</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="returnTableModels" asp-action="Index">ReturnTable</a>
+                            <a class="nav-link" href="#">Inspectors</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
@@ -62,20 +47,74 @@
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
+    <div class="w3l-main-slider position-relative" id="home">
+        <div class="w3l-bannerhny-content">
+            <div class="container">
+                <div class="w3l-bannerhny-info">
+                    <h1 class="mb-md-5 mb-4">
+                        Now It's
+                        Easy for 
+                        you to
+                        Rent a Car!
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="clients">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6 pe-lg-5">
+                    <div class="title-content text-left">
+                        <h6 class="title-subw3hny mb-2"><span>About Us</span></h6>
+                        <h3 class="title-w3l">We take pride in serving our customers safely.</h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.
+                        </p>
+                    </div>
+                    <p class="pr-lg-5">
+                        <!-- About Us description... -->
+                    </p>
+                    <h6 class="title-subw3hny two mb-2"><span>Why Us</span></h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>JoJo References</h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.</p>
+                            <h4>Auto Driveaway</h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Student Vehicles</h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.</p>
+                            <h4>Closed Carrier Transport</h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - Sauraav_POE_CLDV - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2023 - The Ride You Rent - <a href="#">By Sauraav Jayrajh</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
