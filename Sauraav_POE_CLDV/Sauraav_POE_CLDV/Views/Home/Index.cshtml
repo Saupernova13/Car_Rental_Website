@@ -1,7 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -17,59 +14,105 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        h1 {
+            color: white;
+            font-size: 54px;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        h4 {
+            color: #bcbcc2;
+        }
+
+        h6 {
+            color: #bcbcc2;
+            font-size: 14px;
+        }
+
+        p {
+            color: white;
+            font-size: 14px;
+        }
+
+        .why-us-section {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+            .why-us-section h4,
+            .why-us-section p {
+                color: white;
+            }
     </style>
 </head>
 <body>
+    <br />
+    <br />
+    <br />
+    <br />
     <div class="container">
-        <div>
-            <h1>
-                Now It's
-                Easy for
-                you to
-                Rent a Car!
-            </h1>
-        </div>
-    </div>
-
-
-    <section id="about">
-        <div class="container">
-            <div>
-                <div class="col-lg-6 pe-lg-5">
-                    <div class="title-content text-left">
-                        <h6><span>About Us</span></h6>
-                        <h3>We take pride in serving our customers safely.</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.
-                        </p>
-                    </div>
+        <div class="row">
+            <!--Start of About Us Section-->
+            <div class="col-lg-6 pe-lg-5 order-lg-1">
+                <div class="title-content">
+                    <h1>
+                        It's
+                        Easy for
+                        you to
+                        Rent a Car!
+                    </h1>
+                    <h6><span>About Us</span></h6>
+                    <h3>We take pride in serving our customers safely.</h3>
                     <p>
-                        <!-- About Us description... -->
+                        TheRideYouRent revolutionizes e-hailing by offering hassle-free
+                        vehicle rentals designed for drivers. With their cutting-edge
+                        system, drivers can access reliable cars seamlessly from desktop
+                        or mobile. Experience convenience and success in e-hailing by
+                        joining TheRideYouRent today.
                     </p>
+                </div>
+            </div>
+            <!--End of About Us Section-->
+            <!--Start of Why Us Section-->
+            <div class="col-lg-6 order-lg-2">
+                <div class="why-us-section">
                     <h6><span>Why Us</span></h6>
                     <div class="row">
                         <div class="col-md-6">
-                            <h4>JoJo References</h4>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.</p>
-                            <h4>Auto Driveaway</h4>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.</p>
+                            <h4>• Future-Ready</h4>
+                            <p>
+                                We're improving services to meet your evolving needs. Join us
+                                for a thorough e-hailing solution with cutting-edge technology.
+                            </p>
+                            <h4>• Streamlined Management</h4>
+                            <p>
+                                Easily handle rentals, returns, and late fees with our professional
+                                vehicle management system. Accessible on desktop or mobile for efficiency.
+                            </p>
                         </div>
                         <div class="col-md-6">
-                            <h4>Student Vehicles</h4>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.</p>
-                            <h4>Closed Carrier Transport</h4>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod.</p>
+                            <h4>• Cost-Effective</h4>
+                            <p>
+                                Save on car maintenance, service plans, and motor plans. Competitive rates
+                                and transparent pricing support your driving career.
+                            </p>
+                            <h4>• Convenient and Flexible</h4>
+                            <p>
+                                Rent a car anytime, anywhere with our user-friendly app and platform. Enjoy
+                                a dedicated work vehicle without maintenance worries.
+                            </p>
                         </div>
                     </div>
-                </div>
+                </div
             </div>
+            <!--End of Why Us Section-->
         </div>
-    </section>
-
+    </div>
+    <br />
 </body>
-
 </html>
