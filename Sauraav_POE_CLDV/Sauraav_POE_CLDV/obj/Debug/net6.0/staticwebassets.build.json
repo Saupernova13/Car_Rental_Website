@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cjq96dDgiVzTl2ClL6iw/nhxPQdt1f6SMWIU7BhPq+M=",
+  "Hash": "yyIWO6QzUrzHDQ3fjJpgm8emelkUWPV/lLijYx6MkMg=",
   "Source": "Sauraav_POE_CLDV",
   "BasePath": "_content/Sauraav_POE_CLDV",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\wwwroot\\Images\\The_Ride_You_Rent_Logo.png",
+      "SourceId": "Sauraav_POE_CLDV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\wwwroot\\",
+      "BasePath": "_content/Sauraav_POE_CLDV",
+      "RelativePath": "Images/The_Ride_You_Rent_Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\The_Ride_You_Rent_Logo.png"
     },
     {
       "Identity": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\wwwroot\\Images\\Web_BG.jpg",

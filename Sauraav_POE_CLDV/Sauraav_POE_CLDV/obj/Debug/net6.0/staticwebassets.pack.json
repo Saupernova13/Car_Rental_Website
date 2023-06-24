@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Sauraav_POE_CLDV.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\wwwroot\\Images\\The_Ride_You_Rent_Logo.png",
+      "PackagePath": "staticwebassets\\Images\\The_Ride_You_Rent_Logo.png"
+    },
+    {
       "Id": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\wwwroot\\Images\\Web_BG.jpg",
       "PackagePath": "staticwebassets\\Images\\Web_BG.jpg"
     },
