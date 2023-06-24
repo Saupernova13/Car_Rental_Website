@@ -55,7 +55,7 @@ namespace Sauraav_POE_CLDV.Models
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("carNo,carModel,carBodyType,kilometresTraveled,kilometresServed,available")] carTableModel carTableModel)
+        public async Task<IActionResult> Create([Bind("carNo,carmake,carModel,carBodyType,kilometresTraveled,kilometresServiced,available")] carTableModel carTableModel)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace Sauraav_POE_CLDV.Models
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("carNo,carModel,carBodyType,kilometresTraveled,kilometresServed,available")] carTableModel carTableModel)
+        public async Task<IActionResult> Edit(string id, [Bind("carNo,carmake,carModel,carBodyType,kilometresTraveled,kilometresServiced,available")] carTableModel carTableModel)
         {
             if (id != carTableModel.carNo)
             {

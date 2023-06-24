@@ -14,9 +14,9 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="rentalID" />
             <div class="form-group">
-                <label asp-for="returnID" class="control-label"></label>
-                <input asp-for="returnID" class="form-control" />
-                <span asp-validation-for="returnID" class="text-danger"></span>
+                <label asp-for="carNo" class="control-label"></label>
+                <input asp-for="carNo" class="form-control" />
+                <span asp-validation-for="carNo" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="inspectorNo" class="control-label"></label>
@@ -24,19 +24,24 @@
                 <span asp-validation-for="inspectorNo" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="dateReturn" class="control-label"></label>
-                <input asp-for="dateReturn" class="form-control" />
-                <span asp-validation-for="dateReturn" class="text-danger"></span>
+                <label asp-for="driver" class="control-label"></label>
+                <input asp-for="driver" class="form-control" />
+                <span asp-validation-for="driver" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="daysElapsed" class="control-label"></label>
-                <input asp-for="daysElapsed" class="form-control" />
-                <span asp-validation-for="daysElapsed" class="text-danger"></span>
+                <label asp-for="rentalFee" class="control-label"></label>
+                <input asp-for="rentalFee" class="form-control" />
+                <span asp-validation-for="rentalFee" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="fineValue" class="control-label"></label>
-                <input asp-for="fineValue" class="form-control" />
-                <span asp-validation-for="fineValue" class="text-danger"></span>
+                <label asp-for="dateStart" class="control-label"></label>
+                <input asp-for="dateStart" class="form-control" />
+                <span asp-validation-for="dateStart" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dateEnd" class="control-label"></label>
+                <input asp-for="dateEnd" class="form-control" />
+                <span asp-validation-for="dateEnd" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

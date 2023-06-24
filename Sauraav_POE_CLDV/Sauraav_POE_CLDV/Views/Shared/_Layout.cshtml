@@ -20,13 +20,13 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cars</a>
+                            <a class="nav-link" asp-controller="carTableModels" asp-action="Index">Cars</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Drivers</a>
+                            <a class="nav-link" asp-controller="driverModels" asp-action="Index">Drivers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inspectors</a>
+                            <a class="nav-link" asp-controller="inspectorModels" asp-action="Index">Inspectors</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -48,11 +48,6 @@
         </nav>
     </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
     <div class="w3l-main-slider position-relative" id="home">
         <div class="w3l-bannerhny-content">
@@ -116,5 +111,11 @@
     <script src="~/js/site.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
+    <div class="container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
 </body>
+
 </html>

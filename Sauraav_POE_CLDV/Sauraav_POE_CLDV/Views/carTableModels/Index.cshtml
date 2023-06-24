@@ -13,6 +13,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.carmake)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.carModel)
             </th>
             <th>
@@ -22,7 +25,7 @@
                 @Html.DisplayNameFor(model => model.kilometresTraveled)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.kilometresServed)
+                @Html.DisplayNameFor(model => model.kilometresServiced)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.available)
@@ -34,6 +37,9 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.carmake)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.carModel)
             </td>
             <td>
@@ -43,7 +49,7 @@
                 @Html.DisplayFor(modelItem => item.kilometresTraveled)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.kilometresServed)
+                @Html.DisplayFor(modelItem => item.kilometresServiced)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.available)

@@ -27,7 +27,7 @@ namespace Sauraav_POE_CLDV.Models
         }
 
         // GET: inspectorModels/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null || _context.inspector == null)
             {
@@ -67,7 +67,7 @@ namespace Sauraav_POE_CLDV.Models
         }
 
         // GET: inspectorModels/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null || _context.inspector == null)
             {
@@ -87,7 +87,7 @@ namespace Sauraav_POE_CLDV.Models
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("inspectorNo,inspectorName,inspectorEmail,inspectorMobile")] inspectorModel inspectorModel)
+        public async Task<IActionResult> Edit(string id, [Bind("inspectorNo,inspectorName,inspectorEmail,inspectorMobile")] inspectorModel inspectorModel)
         {
             if (id != inspectorModel.inspectorNo)
             {
@@ -118,7 +118,7 @@ namespace Sauraav_POE_CLDV.Models
         }
 
         // GET: inspectorModels/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null || _context.inspector == null)
             {
@@ -138,7 +138,7 @@ namespace Sauraav_POE_CLDV.Models
         // POST: inspectorModels/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             if (_context.inspector == null)
             {
@@ -154,7 +154,7 @@ namespace Sauraav_POE_CLDV.Models
             return RedirectToAction(nameof(Index));
         }
 
-        private bool inspectorModelExists(int id)
+        private bool inspectorModelExists(string id)
         {
           return (_context.inspector?.Any(e => e.inspectorNo == id)).GetValueOrDefault();
         }

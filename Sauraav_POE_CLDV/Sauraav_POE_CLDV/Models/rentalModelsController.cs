@@ -55,7 +55,7 @@ namespace Sauraav_POE_CLDV.Models
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("rentalID,returnID,inspectorNo,dateReturn,daysElapsed,fineValue")] rentalModel rentalModel)
+        public async Task<IActionResult> Create([Bind("rentalID,carNo,inspectorNo,driver,rentalFee,dateStart,dateEnd")] rentalModel rentalModel)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace Sauraav_POE_CLDV.Models
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("rentalID,returnID,inspectorNo,dateReturn,daysElapsed,fineValue")] rentalModel rentalModel)
+        public async Task<IActionResult> Edit(int id, [Bind("rentalID,carNo,inspectorNo,driver,rentalFee,dateStart,dateEnd")] rentalModel rentalModel)
         {
             if (id != rentalModel.rentalID)
             {

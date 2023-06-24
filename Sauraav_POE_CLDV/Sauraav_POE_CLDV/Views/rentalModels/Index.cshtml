@@ -13,19 +13,22 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.returnID)
+                @Html.DisplayNameFor(model => model.carNo)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.inspectorNo)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.dateReturn)
+                @Html.DisplayNameFor(model => model.driver)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.daysElapsed)
+                @Html.DisplayNameFor(model => model.rentalFee)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.fineValue)
+                @Html.DisplayNameFor(model => model.dateStart)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dateEnd)
             </th>
             <th></th>
         </tr>
@@ -34,19 +37,22 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.returnID)
+                @Html.DisplayFor(modelItem => item.carNo)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.inspectorNo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.dateReturn)
+                @Html.DisplayFor(modelItem => item.driver)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.daysElapsed)
+                @Html.DisplayFor(modelItem => item.rentalFee)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.fineValue)
+                @Html.DisplayFor(modelItem => item.dateStart)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dateEnd)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.rentalID">Edit</a> |
