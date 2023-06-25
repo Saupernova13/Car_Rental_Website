@@ -6,6 +6,7 @@
 
 <style>
     h1,
+    h4,
     a,
     input[type="text"],
     input[type="submit"],
@@ -23,65 +24,72 @@
     label.control-label {
         display: block;
         margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
 </style>
 
-<h1>Create</h1>
+<h1 class="center">Create</h1>
 
-<h4>carTableModel</h4>
+<h4 class="center">Add a Car to the Database</h4>
 <hr />
-<div class="row">
+<div class="form-container">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="carNo" class="control-label"></label>
+                <label asp-for="carNo" class="control-label">Car Number:</label>
                 <input asp-for="carNo" class="form-control" />
                 <span asp-validation-for="carNo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="carmake" class="control-label"></label>
+                <br />
+                <label asp-for="carmake" class="control-label">Car Make:</label>
                 <input asp-for="carmake" class="form-control" />
                 <span asp-validation-for="carmake" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="carModel" class="control-label"></label>
+                <br />
+                <label asp-for="carModel" class="control-label">Car Model:</label>
                 <input asp-for="carModel" class="form-control" />
                 <span asp-validation-for="carModel" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="carBodyType" class="control-label"></label>
+                <br />
+                <label asp-for="carBodyType" class="control-label">Car Body Type:</label>
                 <input asp-for="carBodyType" class="form-control" />
                 <span asp-validation-for="carBodyType" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="kilometresTraveled" class="control-label"></label>
+                <br />
+                <label asp-for="kilometresTraveled" class="control-label">Kilometres Traveled:</label>
                 <input asp-for="kilometresTraveled" class="form-control" />
                 <span asp-validation-for="kilometresTraveled" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="kilometresServiced" class="control-label"></label>
+                <br />
+                <label asp-for="kilometresServiced" class="control-label">Kilometres Serviced:</label>
                 <input asp-for="kilometresServiced" class="form-control" />
                 <span asp-validation-for="kilometresServiced" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
+                <br />
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="available" /> @Html.DisplayNameFor(model => model.available)
+                    <input class="form-check-input" asp-for="available" /> Is Available
                 </label>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <br />
+                <div class="center">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
             </div>
         </form>
     </div>
 </div>
-
-<div>
+<div class="center">
     <a asp-action="Index">Back to List</a>
 </div>
-
+<br />
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
