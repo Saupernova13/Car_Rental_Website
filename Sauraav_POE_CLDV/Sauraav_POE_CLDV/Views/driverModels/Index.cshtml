@@ -3,7 +3,15 @@
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    h1 {
+        color: white;
+    }
 
+    a {
+        color: white;
+    }
+</style>
 <h1>Index</h1>
 
 <p>
@@ -28,26 +36,27 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.driverName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.driverAddress)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.driverEmail)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.driverMobile)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.driverID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.driverID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.driverID">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.driverName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.driverAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.driverEmail)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.driverMobile)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.driverID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.driverID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.driverID">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
