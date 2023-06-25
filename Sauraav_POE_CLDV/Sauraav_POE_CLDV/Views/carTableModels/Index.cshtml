@@ -3,7 +3,6 @@
 @{
     ViewData["Title"] = "Index";
 }
-<link href="~/css/lux.css" rel="stylesheet" />
 <style>
     h1 {
         color: white;
@@ -23,7 +22,7 @@
         table.table td {
             background-color: transparent;
             border: none;
-            color: white; /* Set table content color to white */
+            color: white; 
         }
 </style>
 <h1>Index</h1>
@@ -35,22 +34,22 @@
     <thead>
         <tr>
             <th>
-                <span style="color: white;">@Html.DisplayNameFor(model => model.carmake)</span>
+                <span>@Html.DisplayNameFor(model => model.carmake)</span>
             </th>
             <th>
-                <span style="color: white;">@Html.DisplayNameFor(model => model.carModel)</span>
+                <span>@Html.DisplayNameFor(model => model.carModel)</span>
             </th>
             <th>
-                <span style="color: white;">@Html.DisplayNameFor(model => model.carBodyType)</span>
+                <span>@Html.DisplayNameFor(model => model.carBodyType)</span>
             </th>
             <th>
-                <span style="color: white;">@Html.DisplayNameFor(model => model.kilometresTraveled)</span>
+                <span>@Html.DisplayNameFor(model => model.kilometresTraveled)</span>
             </th>
             <th>
-                <span style="color: white;">@Html.DisplayNameFor(model => model.kilometresServiced)</span>
+                <span>@Html.DisplayNameFor(model => model.kilometresServiced)</span>
             </th>
             <th>
-                <span style="color: white;">@Html.DisplayNameFor(model => model.available)</span>
+                <span>@Html.DisplayNameFor(model => model.available)</span>
             </th>
             <th></th>
         </tr>
@@ -60,22 +59,22 @@
         {
             <tr>
                 <td>
-                    <span style="color: white;">@Html.DisplayFor(modelItem => item.carmake)</span>
+                    <span>@Html.DisplayFor(modelItem => item.carmake)</span>
                 </td>
                 <td>
-                    <span style="color: white;">@Html.DisplayFor(modelItem => item.carModel)</span>
+                    <span>@Html.DisplayFor(modelItem => item.carModel)</span>
                 </td>
                 <td>
-                    <span style="color: white;">@Html.DisplayFor(modelItem => item.carBodyType)</span>
+                    <span>@Html.DisplayFor(modelItem => item.carBodyType)</span>
                 </td>
                 <td>
-                    <span style="color: white;">@Html.DisplayFor(modelItem => item.kilometresTraveled)</span>
+                    <span>@Html.DisplayFor(modelItem => item.kilometresTraveled)</span>
                 </td>
                 <td>
-                    <span style="color: white;">@Html.DisplayFor(modelItem => item.kilometresServiced)</span>
+                    <span>@Html.DisplayFor(modelItem => item.kilometresServiced)</span>
                 </td>
                 <td>
-                    <span style="color: white;">@Html.DisplayFor(modelItem => item.available)</span>
+                    <span>@Html.DisplayFor(modelItem => item.available)</span>
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.carNo">Edit</a> |
