@@ -12,7 +12,7 @@ using Sauraav_POE_CLDV.Data;
 namespace Sauraav_POE_CLDV.Migrations
 {
     [DbContext(typeof(ConnectDB))]
-    [Migration("20230626221450_IdentityTables")]
+    [Migration("20230626223618_IdentityTables")]
     partial class IdentityTables
     {
         /// <inheritdoc />
