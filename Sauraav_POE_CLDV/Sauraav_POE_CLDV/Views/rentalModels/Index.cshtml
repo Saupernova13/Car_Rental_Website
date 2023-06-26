@@ -78,6 +78,9 @@
                 <td>
                     <span>@Html.DisplayFor(modelItem => item.dateEnd)</span>
                 </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.rentalID">Details</a>
+                </td>
             </tr>
         }
     </tbody>

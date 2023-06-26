@@ -71,6 +71,9 @@
                 <td>
                     <span>@Html.DisplayFor(modelItem => item.fineValue)</span>
                 </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.rentalID">Details</a>
+                </td>
             </tr>
         }
     </tbody>

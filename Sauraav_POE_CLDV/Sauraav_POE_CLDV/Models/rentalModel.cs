@@ -12,5 +12,16 @@ namespace Sauraav_POE_CLDV.Models
         public DateTime dateStart { get; set; }
         public DateTime dateEnd { get; set; }
 
+        public double calculatePenaltyFee()
+        {
+            const double penaltyFee = 500.00;
+            double totalDaysLate = (DateTime.Now - dateEnd).TotalDays;
+            double amountDue = 0;
+            if (totalDaysLate > 0)
+            {
+                amountDue = totalDaysLate * penaltyFee;
+            }
+            return (amountDue);
+        }
     }
 }
