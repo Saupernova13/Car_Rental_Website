@@ -1,9 +1,32 @@
-﻿@model IEnumerable<Sauraav_POE_CLDV.Models.rentalModel>
+﻿<!--Sauraav Jayrajh-->
+<!--ST10024620-->
+@model IEnumerable<Sauraav_POE_CLDV.Models.rentalModel>
 
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    h1 {
+        color: white;
+    }
 
+    a {
+        color: white;
+    }
+
+    table.table {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        color: white;
+    }
+
+        table.table th,
+        table.table td {
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+</style>
 <h1>Index</h1>
 
 <p>
@@ -13,53 +36,51 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.carNo)
+                <span>@Html.DisplayNameFor(model => model.carNo)</span>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.inspectorNo)
+                <span>@Html.DisplayNameFor(model => model.inspectorNo)</span>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.driver)
+                <span>@Html.DisplayNameFor(model => model.driver)</span>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.rentalFee)
+                <span>@Html.DisplayNameFor(model => model.rentalFee)</span>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.dateStart)
+                <span>@Html.DisplayNameFor(model => model.dateStart)</span>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.dateEnd)
+                <span>@Html.DisplayNameFor(model => model.dateEnd)</span>
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.carNo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.inspectorNo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.driver)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.rentalFee)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.dateStart)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.dateEnd)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.rentalID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.rentalID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.rentalID">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <span>@Html.DisplayFor(modelItem => item.carNo)</span>
+                </td>
+                <td>
+                    <span>@Html.DisplayFor(modelItem => item.inspectorNo)</span>
+                </td>
+                <td>
+                    <span>@Html.DisplayFor(modelItem => item.driver)</span>
+                </td>
+                <td>
+                    <span>@Html.DisplayFor(modelItem => item.rentalFee)</span>
+                </td>
+                <td>
+                    <span>@Html.DisplayFor(modelItem => item.dateStart)</span>
+                </td>
+                <td>
+                    <span>@Html.DisplayFor(modelItem => item.dateEnd)</span>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+<br />
+

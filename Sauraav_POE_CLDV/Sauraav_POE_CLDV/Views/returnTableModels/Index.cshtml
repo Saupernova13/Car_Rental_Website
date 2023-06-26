@@ -1,60 +1,78 @@
-﻿@model IEnumerable<Sauraav_POE_CLDV.Models.returnTableModel>
-
+﻿<!--Sauraav Jayrajh-->
+<!--ST10024620-->
+@model IEnumerable<Sauraav_POE_CLDV.Models.returnTableModel>
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    h1 {
+        color: white;
+    }
 
-    <h1>Index</h1>
+    a {
+        color: white;
+    }
 
-    <p>
-        <a asp-action="Create">Create New</a>
-    </p>
-    <table class="table">
-        <thead>
+    table.table {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        color: white;
+    }
+
+        table.table th,
+        table.table td {
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+</style>
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <span>@Html.DisplayNameFor(model => model.rentalID)</span>
+            </th>
+            <th>
+                <span>@Html.DisplayNameFor(model => model.inspectorNo)</span>
+            </th>
+            <th>
+                <span>@Html.DisplayNameFor(model => model.dateReturn)</span>
+            </th>
+            <th>
+                <span>@Html.DisplayNameFor(model => model.daysElapsed)</span>
+            </th>
+            <th>
+                <span>@Html.DisplayNameFor(model => model.fineValue)</span>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
             <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.rentalID)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.inspectorNo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.dateReturn)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.daysElapsed)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.fineValue)
-                </th>
-                <th></th>
+                <td>
+                    <span>@Html.DisplayFor(modelItem => item.rentalID)</span>
+                </td>
+                <td>
+                    <span>@Html.DisplayFor(modelItem => item.inspectorNo)</span>
+                </td>
+                <td>
+                    <span>@Html.DisplayFor(modelItem => item.dateReturn)</span>
+                </td>
+                <td>
+                    <span>@Html.DisplayFor(modelItem => item.daysElapsed)</span>
+                </td>
+                <td>
+                    <span>@Html.DisplayFor(modelItem => item.fineValue)</span>
+                </td>
             </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.rentalID)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.inspectorNo)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.dateReturn)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.daysElapsed)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.fineValue)
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.returnID">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.returnID">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.returnID">Delete</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+        }
+    </tbody>
+</table>
+<br />

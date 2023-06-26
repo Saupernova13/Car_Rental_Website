@@ -1,53 +1,84 @@
-﻿@model Sauraav_POE_CLDV.Models.returnTableModel
-
+﻿<!--Sauraav Jayrajh-->
+<!--ST10024620-->
+@model Sauraav_POE_CLDV.Models.returnTableModel
 @{
     ViewData["Title"] = "Create";
 }
+<style>
+    h1,
+    h4,
+    a,
+    .form-check-label {
+        color: white;
+    }
 
-<h1>Create</h1>
+    .form-group {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+    }
 
-<h4>returnTableModel</h4>
+    label.control-label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+</style>
+<h1 class="center">Create</h1>
+
+<h4 class="center">Log A Return</h4>
 <hr />
-<div class="row">
+<div class="form-container">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="rentalID" class="control-label"></label>
+                <label asp-for="rentalID" class="control-label">Rental ID:</label>
                 <input asp-for="rentalID" class="form-control" />
                 <span asp-validation-for="rentalID" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="inspectorNo" class="control-label"></label>
+                <br />
+                <label asp-for="inspectorNo" class="control-label">Inspector Number:</label>
                 <input asp-for="inspectorNo" class="form-control" />
                 <span asp-validation-for="inspectorNo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="dateReturn" class="control-label"></label>
+                <br />
+                <label asp-for="dateReturn" class="control-label">Date Return:</label>
                 <input asp-for="dateReturn" class="form-control" />
                 <span asp-validation-for="dateReturn" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="daysElapsed" class="control-label"></label>
+                <br />
+                <label asp-for="daysElapsed" class="control-label">Days Elapsed:</label>
                 <input asp-for="daysElapsed" class="form-control" />
                 <span asp-validation-for="daysElapsed" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="fineValue" class="control-label"></label>
+                <br />
+                <label asp-for="fineValue" class="control-label">Fine Value:</label>
                 <input asp-for="fineValue" class="form-control" />
                 <span asp-validation-for="fineValue" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <br />
+                <div class="center">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
             </div>
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
+<br />
+<div class="center">
+    <button style="visibility:hidden"></button>
 </div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
+

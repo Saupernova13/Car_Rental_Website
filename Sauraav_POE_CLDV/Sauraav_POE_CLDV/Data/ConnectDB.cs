@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿//Sauraav Jayrajh
+//ST100024620
+using Microsoft.EntityFrameworkCore;
 using Sauraav_POE_CLDV.Models;
 namespace Sauraav_POE_CLDV.Data
 {
@@ -7,6 +9,7 @@ namespace Sauraav_POE_CLDV.Data
         public ConnectDB(DbContextOptions options) : base(options)
         {
         }
+        //Definition of tables
         public DbSet<carBodyTypeModel> carBodyType { get; set; }
         public DbSet<carMakeModel> carMake { get; set; }
         public DbSet<carTableModel> car { get; set; }
@@ -14,6 +17,8 @@ namespace Sauraav_POE_CLDV.Data
         public DbSet<inspectorModel> inspector { get; set; }
         public DbSet<rentalModel> rental { get; set; }
         public DbSet<returnTableModel> returnTable { get; set; }
+
+        //Definition of PRIMARY KEYS
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<carBodyTypeModel>()
