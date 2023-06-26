@@ -3,42 +3,73 @@
 @{
     ViewData["Title"] = "Edit";
 }
+<style>
+    h1,
+    h4,
+    a,
+    .form-check-label {
+        color: white;
+    }
 
-<h1>Edit</h1>
+    .form-group {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+    }
 
-<h4>inspectorModel</h4>
+    label.control-label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<h1 class="center">Edit</h1>
+<h4 class="center">Edit Inspector's Details</h4>
 <hr />
-<div class="row">
+<div class="form-container">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="inspectorNo" />
             <div class="form-group">
-                <label asp-for="inspectorName" class="control-label"></label>
+                <label asp-for="inspectorName" class="control-label">Inspector Name:</label>
                 <input asp-for="inspectorName" class="form-control" />
                 <span asp-validation-for="inspectorName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="inspectorEmail" class="control-label"></label>
+                <br />
+                <label asp-for="inspectorEmail" class="control-label">Inspector Email:</label>
                 <input asp-for="inspectorEmail" class="form-control" />
                 <span asp-validation-for="inspectorEmail" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="inspectorMobile" class="control-label"></label>
+                <br />
+                <label asp-for="inspectorMobile" class="control-label">Inspector Mobile:</label>
                 <input asp-for="inspectorMobile" class="form-control" />
                 <span asp-validation-for="inspectorMobile" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <br />
+                <div class="text-center">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
             </div>
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
+<br />
+<div class="center">
+    <button style="visibility:hidden">
+    </button>
 </div>
-
+<br />
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -1,15 +1,11 @@
 ﻿@model Sauraav_POE_CLDV.Models.inspectorModel
-
 @{
     ViewData["Title"] = "Create";
 }
-
 <style>
     h1,
     h4,
     a,
-    input[type="text"],
-    input[type="submit"],
     .form-check-label {
         color: white;
     }
@@ -39,7 +35,7 @@
     }
 </style>
 <h1 class="center">Create</h1>
-<h4 class="center">inspectorModel</h4>
+<h4 class="center">Add an Inspector to the Database</h4>
 <hr />
 <div class="form-container">
     <div class="col-md-4">
@@ -64,7 +60,6 @@
                 <br />
                 <div class="center">
                     <input type="submit" value="Create" class="btn btn-primary" />
-
                 </div>
                 <br>
 
@@ -72,15 +67,11 @@
         </form>
     </div>
 </div>
-
-
 <br />
 <div class="center">
     <button style="visibility:hidden">
     </button>
-
 </div>
-
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

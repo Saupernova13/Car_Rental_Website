@@ -1,15 +1,11 @@
 ﻿@model Sauraav_POE_CLDV.Models.carTableModel
-
 @{
     ViewData["Title"] = "Edit";
 }
-
 <style>
     h1,
     h4,
     a,
-    input[type="text"],
-    input[type="submit"],
     .form-check-label {
         color: white;
     }
@@ -35,57 +31,53 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
     }
-
 </style>
-
-<h1>Edit</h1>
-
-<h4>carTableModel</h4>
+<h1 class="center">Edit</h1>
+<h4 class="center">Edit Car's Details</h4>
 <hr />
-<div class="row">
+<div class="form-container">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="carNo"  />
+            <input type="hidden" asp-for="carNo" />
             <div class="form-group">
-                <label asp-for="carmake" class="col-form-label mt-4"></label>
+                <label asp-for="carmake" class="col-form-label mt-4">Car Make:</label>
                 <input asp-for="carmake" class="form-control" />
                 <span asp-validation-for="carmake" class="text-danger"></span>
                 <br />
-                <label asp-for="carModel" class="control-label"></label>
+                <label asp-for="carModel" class="control-label">Car Model:</label>
                 <input asp-for="carModel" class="form-control" />
                 <span asp-validation-for="carModel" class="text-danger"></span>
                 <br />
-                <label asp-for="carBodyType" class="control-label"></label>
+                <label asp-for="carBodyType" class="control-label">Car Body Type:</label>
                 <input asp-for="carBodyType" class="form-control" />
                 <span asp-validation-for="carBodyType" class="text-danger"></span>
                 <br />
-                <label asp-for="kilometresTraveled" class="control-label"></label>
+                <label asp-for="kilometresTraveled" class="control-label">Kilometres Traveled:</label>
                 <input asp-for="kilometresTraveled" class="form-control" />
                 <span asp-validation-for="kilometresTraveled" class="text-danger"></span>
                 <br />
-                <label asp-for="kilometresServiced" class="control-label"></label>
+                <label asp-for="kilometresServiced" class="control-label">Kilometres Serviced:</label>
                 <input asp-for="kilometresServiced" class="form-control" />
                 <span asp-validation-for="kilometresServiced" class="text-danger"></span>
                 <br />
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="available" /> @Html.DisplayNameFor(model => model.available)
+                    <input class="form-check-input" asp-for="available" />Is Available:
                 </label>
-                <div class="centre">
+                <div class="text-center">
                     <input type="submit" value="Save" class="btn btn-primary" />
                 </div>
             </div>
-
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
+<br />
+<div class="center">
+    <button style="visibility:hidden">
+    </button>
 </div>
-
+<br />
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

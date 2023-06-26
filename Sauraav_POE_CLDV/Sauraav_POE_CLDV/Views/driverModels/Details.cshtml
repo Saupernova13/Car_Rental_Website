@@ -1,42 +1,78 @@
 ﻿@model Sauraav_POE_CLDV.Models.driverModel
-
 @{
     ViewData["Title"] = "Details";
 }
+<style>
+    h1,
+    h4,
+    a,
+    .form-check-label,
+    .col-form-label {
+        color: white;
+    }
 
-<h1>Details</h1>
+    dl.row {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+    }
 
+    dt.col-sm-2 {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-group {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+    }
+</style>
+<h1 class="center">Details</h1>
 <div>
-    <h4>driverModel</h4>
+    <h4 class="center">Item From Driver Table</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.driverName)
+        <dt class="col-sm-2">
+            Driver Name:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.driverName)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.driverAddress)
+        <dt class="col-sm-2">
+            Driver Address:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.driverAddress)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.driverEmail)
+        <dt class="col-sm-2">
+            Driver Email:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.driverEmail)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.driverMobile)
+        <dt class="col-sm-2">
+            Driver Phone Number:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.driverMobile)
         </dd>
     </dl>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.driverID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div class="center">
+    <a asp-action="Edit" asp-route-id="@Model?.driverID" class="btn btn-primary">Edit</a>
+    <a asp-action="Index" class="btn btn-primary">Back to List</a>
 </div>
