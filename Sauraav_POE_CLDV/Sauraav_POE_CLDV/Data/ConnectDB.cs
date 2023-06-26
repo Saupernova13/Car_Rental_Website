@@ -1,10 +1,11 @@
 ﻿//Sauraav Jayrajh
 //ST100024620
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Sauraav_POE_CLDV.Models;
 namespace Sauraav_POE_CLDV.Data
 {
-    public class ConnectDB : DbContext
+    public class ConnectDB : IdentityDbContext
     {
         public ConnectDB(DbContextOptions options) : base(options)
         {
