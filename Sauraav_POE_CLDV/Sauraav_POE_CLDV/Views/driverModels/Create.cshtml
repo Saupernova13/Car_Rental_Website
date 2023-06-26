@@ -4,45 +4,85 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<style>
+    h1,
+    h4,
+    a,
+    input[type="text"],
+    input[type="submit"],
+    .form-check-label {
+        color: white;
+    }
 
-<h4>driverModel</h4>
+    .form-group {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+    }
+
+    label.control-label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+</style>
+
+<h1 class="center">Create</h1>
+
+<h4 class="center">Add a Driver to the Database</h4>
 <hr />
-<div class="row">
+<div class="form-container">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="driverName" class="control-label"></label>
+                <label asp-for="driverName" class="control-label">Driver Name:</label>
                 <input asp-for="driverName" class="form-control" />
                 <span asp-validation-for="driverName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="driverAddress" class="control-label"></label>
+                <br />
+                <label asp-for="driverAddress" class="control-label">Driver Address:</label>
                 <input asp-for="driverAddress" class="form-control" />
                 <span asp-validation-for="driverAddress" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="driverEmail" class="control-label"></label>
+                <br />
+                <label asp-for="driverEmail" class="control-label">Driver Email:</label>
                 <input asp-for="driverEmail" class="form-control" />
                 <span asp-validation-for="driverEmail" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="driverMobile" class="control-label"></label>
+                <br />
+                <label asp-for="driverMobile" class="control-label">Driver Mobile:</label>
                 <input asp-for="driverMobile" class="form-control" />
                 <span asp-validation-for="driverMobile" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <br />
+                <div class="center">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<br />
+<div class="center">
+    <button style="visibility:hidden">
+    </button>
+
 </div>
 
+
+<br />
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

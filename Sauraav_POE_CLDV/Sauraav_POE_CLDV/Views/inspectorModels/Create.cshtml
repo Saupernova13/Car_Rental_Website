@@ -4,45 +4,87 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<style>
+    h1,
+    h4,
+    a,
+    input[type="text"],
+    input[type="submit"],
+    .form-check-label {
+        color: white;
+    }
 
-<h4>inspectorModel</h4>
+    .form-group {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+    }
+
+    label.control-label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+</style>
+<h1 class="center">Create</h1>
+<h4 class="center">inspectorModel</h4>
 <hr />
-<div class="row">
+<div class="form-container">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="inspectorNo" class="control-label"></label>
+                <label asp-for="inspectorNo" class="control-label">Inspector Number:</label>
                 <input asp-for="inspectorNo" class="form-control" />
                 <span asp-validation-for="inspectorNo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="inspectorName" class="control-label"></label>
+                <br />
+                <label asp-for="inspectorName" class="control-label">Inspector Name:</label>
                 <input asp-for="inspectorName" class="form-control" />
                 <span asp-validation-for="inspectorName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="inspectorEmail" class="control-label"></label>
+                <br />
+                <label asp-for="inspectorEmail" class="control-label">Inspector Email:</label>
                 <input asp-for="inspectorEmail" class="form-control" />
                 <span asp-validation-for="inspectorEmail" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="inspectorMobile" class="control-label"></label>
+                <br />
+                <label asp-for="inspectorMobile" class="control-label">Inspector Mobile:</label>
                 <input asp-for="inspectorMobile" class="form-control" />
                 <span asp-validation-for="inspectorMobile" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <br />
+                <div class="center">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+
+                </div>
+                <br>
+
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+
+<br />
+<div class="center">
+    <button style="visibility:hidden">
+    </button>
+
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
+
+
