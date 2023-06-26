@@ -22,6 +22,7 @@ namespace Sauraav_POE_CLDV.Data
         //Definition of PRIMARY KEYS
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<carBodyTypeModel>()
                 .HasKey(c => c.carBodyTypeID);
             modelBuilder.Entity<carMakeModel>()
