@@ -1,3 +1,17 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/P3DQXiRG)
 My Site Link:
-https://sauraavpoecldv20230627111310.azurewebsites.net/
+- https://sauraavpoecldv20230627111310.azurewebsites.net
+
+Attributions and Plugins:
+- Microsoft Azure
+- Microsoft SQL Server Management Studio
+- Microsoft.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore.Tools
+- Microsoft.EntityFrameworkCore.SqlServer
+- Microsoft.VisualStudio.Web.CodeGeneration.Design
+- Microsoft.AspNetCore.ldentity.EntityFrameworkCore
+- Microsoft.AspNetCore.ldentity.UI
+- JQuery 3.7.0 (https://jquery.com/download/)
+- Lux CSS Style File (https://bootswatch.com/lux/)
+- ASP.NET Identity - User Registration, Login and Log-out (https://www.youtube.com/watch?v=ghzvSROMo_M)
+- Background Image (https://wallpapersafari.com/w/M97hXb)
+- Logo (https://looka.com/explore)

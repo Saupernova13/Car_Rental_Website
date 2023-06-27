@@ -1,13 +1,25 @@
 ﻿@page
+<!--Sauraav Jayrajh-->
+<!--ST10024620-->
 @model DeletePersonalDataModel
 @{
     ViewData["Title"] = "Delete Personal Data";
     ViewData["ActivePage"] = ManageNavPages.PersonalData;
 }
+<style>
+    h3, p {
+        color: white
+    }
 
-<h3>@ViewData["Title"]</h3>
+    .form-group {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+    }</style>
 
-<div class="alert alert-warning" role="alert">
+<div class="form-group" role="alert">
+    <h3>@ViewData["Title"]</h3>
     <p>
         <strong>Deleting this data will permanently remove your account, and this cannot be recovered.</strong>
     </p>

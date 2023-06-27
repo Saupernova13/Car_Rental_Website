@@ -1,84 +1,84 @@
-﻿<!--Sauraav Jayrajh-->
-<!--ST10024620-->
-@model Sauraav_POE_CLDV.Models.rentalModel
-@{
-    ViewData["Title"] = "Create";
-}
-<style>
-    h1,
-    h4,
-    a,
-    .form-check-label {
-        color: white;
-    }
-
-    .form-group {
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
-        color: white;
-        padding: 10px;
-    }
-
-    label.control-label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
-
-    .center {
-        text-align: center;
-    }
-
-    .form-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-</style>
-<h1 class="center">Create</h1>
-<h4 class="center">Log A Rental</h4>
-<hr />
-<div class="form-container">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="carNo" class="control-label">Car Number:</label>
-                <input asp-for="carNo" class="form-control" />
-                <span asp-validation-for="carNo" class="text-danger"></span>
-                <br />
-                <label asp-for="inspectorNo" class="control-label">Inspector Number:</label>
-                <input asp-for="inspectorNo" class="form-control" />
-                <span asp-validation-for="inspectorNo" class="text-danger"></span>
-                <br />
-                <label asp-for="driver" class="control-label">Driver:</label>
-                <input asp-for="driver" class="form-control" />
-                <span asp-validation-for="driver" class="text-danger"></span>
-                <br />
-                <label asp-for="rentalFee" class="control-label">Rental Fee:</label>
-                <input asp-for="rentalFee" class="form-control" />
-                <span asp-validation-for="rentalFee" class="text-danger"></span>
-                <br />
-                <label asp-for="dateStart" class="control-label">Start Date:</label>
-                <input asp-for="dateStart" class="form-control" />
-                <span asp-validation-for="dateStart" class="text-danger"></span>
-                <br />
-                <label asp-for="dateEnd" class="control-label">End Date:</label>
-                <input asp-for="dateEnd" class="form-control" />
-                <span asp-validation-for="dateEnd" class="text-danger"></span>
-                <br />
-                <div class="center">
-                    <input type="submit" value="Create" class="btn btn-primary" />
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-<br />
-@section Scripts {
+﻿    <!--Sauraav Jayrajh-->
+    <!--ST10024620-->
+    @model Sauraav_POE_CLDV.Models.rentalModel
     @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        ViewData["Title"] = "Create";
     }
-}
+    <style>
+        h1,
+        h4,
+        a,
+        .form-check-label {
+            color: white;
+        }
+
+        .form-group {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+        }
+
+        label.control-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+    <h1 class="center">Create</h1>
+    <h4 class="center">Log A Rental</h4>
+    <hr />
+    <div class="form-container">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="carNo" class="control-label">Car Number:</label>
+                    <input asp-for="carNo" class="form-control" />
+                    <span asp-validation-for="carNo" class="text-danger"></span>
+                    <br />
+                    <label asp-for="inspectorNo" class="control-label">Inspector Number:</label>
+                    <input asp-for="inspectorNo" class="form-control" />
+                    <span asp-validation-for="inspectorNo" class="text-danger"></span>
+                    <br />
+                    <label asp-for="driver" class="control-label">Driver:</label>
+                    <input asp-for="driver" class="form-control" />
+                    <span asp-validation-for="driver" class="text-danger"></span>
+                    <br />
+                    <label asp-for="rentalFee" class="control-label">Rental Fee:</label>
+                    <input asp-for="rentalFee" class="form-control" />
+                    <span asp-validation-for="rentalFee" class="text-danger"></span>
+                    <br />
+                    <label asp-for="dateStart" class="control-label">Start Date:</label>
+                    <input asp-for="dateStart" class="form-control" />
+                    <span asp-validation-for="dateStart" class="text-danger"></span>
+                    <br />
+                    <label asp-for="dateEnd" class="control-label">End Date:</label>
+                    <input asp-for="dateEnd" class="form-control" />
+                    <span asp-validation-for="dateEnd" class="text-danger"></span>
+                    <br />
+                    <div class="center">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br />
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
 

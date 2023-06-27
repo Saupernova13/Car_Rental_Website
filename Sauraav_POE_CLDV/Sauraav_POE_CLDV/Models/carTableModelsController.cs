@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -162,5 +163,28 @@ namespace Sauraav_POE_CLDV.Models
         {
           return (_context.car?.Any(e => e.carNo == id)).GetValueOrDefault();
         }
+
+        // GET: carTableModels/ExportCSV
+        public async Task<IActionResult> ExportCSV()
+        {
+            var carNumbers = await _context.car.Select(c => c.carNo).ToListAsync();
+
+            var csvBuilder = new StringBuilder();
+            foreach (var carNumber in carNumbers)
+            {
+                csvBuilder.AppendLine(carNumber);
+            }
+
+            // Set the response headers for CSV download
+            var fileName = "car_numbers.csv";
+            var mimeType = "text/csv";
+
+            byte[] csvBytes = Encoding.UTF8.GetBytes(csvBuilder.ToString());
+
+            // Return the CSV file as a response
+            return File(csvBytes, mimeType, fileName);
+        }
+        // GET: carTableModels/Create
+
     }
 }

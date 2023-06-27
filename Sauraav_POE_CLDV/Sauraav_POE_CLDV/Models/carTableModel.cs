@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Sauraav_POE_CLDV.Models
 {
     public class carTableModel
-    {
+    {   
         public string carNo { get; set; }
         public int carmake { get; set; }
         public string carModel { get; set; }

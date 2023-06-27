@@ -9,7 +9,7 @@
 
 <style>
     body {
-        background-color: rgba(0, 0, 0, 0.5); 
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     h1, h2, h3 label, p, a {
@@ -38,7 +38,7 @@
     <div class="col-md-4">
         <div class="form-container">
             <form id="account" method="post">
-                <h2>Use a local account to log in.</h2>
+                <h2>Enter with an Existing Account</h2>
                 <hr />
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-floating">
@@ -65,6 +65,7 @@
                 <div>
                     <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
                 </div>
+                <a style="color:blue" class="text-decoration-underline" id="register" asp-area="Identity" asp-page="/Account/Register">Don't have an account?</a>
                 <br />
             </form>
         </div>
