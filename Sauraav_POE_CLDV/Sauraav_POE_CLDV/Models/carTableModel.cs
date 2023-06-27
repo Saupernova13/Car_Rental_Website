@@ -1,5 +1,6 @@
 ﻿//Sauraav Jayrajh
 //ST100024620
+using System.ComponentModel.DataAnnotations;
 namespace Sauraav_POE_CLDV.Models
 {
     public class carTableModel

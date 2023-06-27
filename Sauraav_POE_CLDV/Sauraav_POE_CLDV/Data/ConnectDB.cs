@@ -3,11 +3,13 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Sauraav_POE_CLDV.Models;
+using Microsoft.AspNetCore.Identity;
+
 namespace Sauraav_POE_CLDV.Data
 {
     public class ConnectDB : IdentityDbContext
-    {
-        public ConnectDB(DbContextOptions options) : base(options)
+    {                                   
+        public ConnectDB(DbContextOptions<ConnectDB> options) : base(options)
         {
         }
         //Definition of tables
@@ -19,9 +21,9 @@ namespace Sauraav_POE_CLDV.Data
         public DbSet<rentalModel> rental { get; set; }
         public DbSet<returnTableModel> returnTable { get; set; }
 
-        //Definition of PRIMARY KEYS
+       
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
+        {   //Definition of PRIMARY KEYS
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<carBodyTypeModel>()
                 .HasKey(c => c.carBodyTypeID);
