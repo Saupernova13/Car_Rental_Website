@@ -1,10 +1,18 @@
 ﻿@page
+<!--Sauraav Jayrajh-->
+<!--ST10024620-->
 @using Microsoft.AspNetCore.Http.Features
 @model TwoFactorAuthenticationModel
 @{
     ViewData["Title"] = "Two-factor authentication (2FA)";
     ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
 }
+
+<style>
+    body {
+        color: white;
+    }
+</style>
 
 <partial name="_StatusMessage" for="StatusMessage" />
 <h3>@ViewData["Title"]</h3>
@@ -69,3 +77,4 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
