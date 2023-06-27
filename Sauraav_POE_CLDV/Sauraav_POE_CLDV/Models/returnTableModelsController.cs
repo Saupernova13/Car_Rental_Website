@@ -163,5 +163,21 @@ namespace Sauraav_POE_CLDV.Models
         {
           return (_context.returnTable?.Any(e => e.returnID == id)).GetValueOrDefault();
         }
+
+        // GET: returnTableModels/CalculatePenaltyFee/5
+        public IActionResult CalculatePenaltyFee(int id)
+        {
+            var returnTableModel = _context.returnTable.FirstOrDefault(m => m.returnID == id);
+            if (returnTableModel == null)
+            {
+                return NotFound();
+            }
+
+            double penaltyFee = returnTableModel.calculatePenaltyFeeLogic();
+            return Json(penaltyFee);
+        }
+
+
+
     }
 }

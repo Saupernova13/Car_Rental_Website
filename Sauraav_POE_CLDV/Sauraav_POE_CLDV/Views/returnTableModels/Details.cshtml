@@ -1,11 +1,10 @@
 ﻿<!--Sauraav Jayrajh-->
 <!--ST10024620-->
 @model Sauraav_POE_CLDV.Models.returnTableModel
-
 @{
     ViewData["Title"] = "Details";
 }
-
+<script src="~/js/jquery-3.7.0.min.js"></script>
 <style>
     h1,
     h4,
@@ -80,12 +79,33 @@
 <div class="center">
     <a asp-action="Edit" asp-route-id="@Model?.returnID" class="btn btn-primary">Edit</a> |
     <a asp-action="Index" class="btn btn-primary">Back to List</a>
-    <a id="displayFeesButton" class="btn btn-primary" data-url="@Url.Action("CalculatePenaltyFee", "returnTableModel")">Display Fees Due</a>
+   <a id="calculateLateFeeButton" class="btn btn-primary">Calculate Late Fee</a>
+
 </div>
 <br />
-<div class="center" id="displayFeesLabel">
-    <h4>0</h4>
+<div class="center">
+    <h4>The amount owed is:</h4>
 </div>
+<div class="center" id="displayFeesLabel">
+    <h4></h4>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#calculateLateFeeButton").click(function () {
+            $.ajax({
+                url: '@Url.Action("CalculatePenaltyFee", "returnTableModels", new { id = Model?.returnID })',
+                type: 'GET',
+                success: function (amountDue) {
+                    $("#displayFeesLabel h4").text(amountDue);
+                },
+                error: function () {
+                    alert("Error occurred while calculating late fee.");
+                }
+            });
+        });
+    });
+</script>
+
 
 
 

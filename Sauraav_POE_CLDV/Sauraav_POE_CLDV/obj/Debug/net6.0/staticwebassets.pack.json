@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\wwwroot\\js\\jquery-3.7.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.7.0.min.js"
+    },
+    {
       "Id": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

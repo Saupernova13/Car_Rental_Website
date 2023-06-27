@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FXkjETohAnTf9YVi64fJVYM1sAO4twoKXeu7WD3Ej3U=",
+  "Hash": "wSkHXKvPlEjhPiPYPuS1VsgO7aZ9NqEOv6cw+l1h1eQ=",
   "Source": "Sauraav_POE_CLDV",
   "BasePath": "_content/Sauraav_POE_CLDV",
   "Mode": "Default",
@@ -1154,6 +1154,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Web_BG.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\wwwroot\\js\\jquery-3.7.0.min.js",
+      "SourceId": "Sauraav_POE_CLDV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\wwwroot\\",
+      "BasePath": "_content/Sauraav_POE_CLDV",
+      "RelativePath": "js/jquery-3.7.0.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery-3.7.0.min.js"
     },
     {
       "Identity": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\wwwroot\\js\\site.js",
