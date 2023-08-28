@@ -1,5 +1,5 @@
-My Site Link:
-- https://sauraavpoecldv20230627111310.azurewebsites.net
+The site currently does not have hosting. You may watch the demo video to see it's full functionality, or
+run the source code locally.
 
 Attributions and Plugins:
 - Microsoft Azure
