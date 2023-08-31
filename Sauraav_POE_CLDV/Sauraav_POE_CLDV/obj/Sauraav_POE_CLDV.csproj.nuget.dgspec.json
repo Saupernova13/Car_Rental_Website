@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV.csproj": {}
+    "C:\\Users\\Sauraav\\Documents\\GitHub\\Car_Rental_Website\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV.csproj": {
+    "C:\\Users\\Sauraav\\Documents\\GitHub\\Car_Rental_Website\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV.csproj",
+        "projectUniqueName": "C:\\Users\\Sauraav\\Documents\\GitHub\\Car_Rental_Website\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV.csproj",
         "projectName": "Sauraav_POE_CLDV",
-        "projectPath": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV.csproj",
+        "projectPath": "C:\\Users\\Sauraav\\Documents\\GitHub\\Car_Rental_Website\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV.csproj",
         "packagesPath": "C:\\Users\\Sauraav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\obj\\",
+        "outputPath": "C:\\Users\\Sauraav\\Documents\\GitHub\\Car_Rental_Website\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.19, )"
@@ -91,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

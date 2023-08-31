@@ -707,6 +707,25 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.21": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.21"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.19": {
         "type": "package",
         "dependencies": {
@@ -4951,6 +4970,21 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
         "microsoft.aspnetcore.cryptography.keyderivation.6.0.19.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.21": {
+      "sha512": "YpALB73Q1CK6ZXAbCOigTOtnQG5j5yazh5j02Ns/VvvxAu03nf5ojfqmA/QGH0jYZ9Q0OE9QN0pfdwSHSp50Pw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/6.0.21",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.xml",
+        "microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.21.nupkg.sha512",
+        "microsoft.aspnetcore.diagnostics.entityframeworkcore.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.19": {
@@ -11635,6 +11669,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.21",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.19",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.18",
       "Microsoft.EntityFrameworkCore >= 7.0.7",
@@ -11650,11 +11685,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV.csproj",
+      "projectUniqueName": "C:\\Users\\Sauraav\\Documents\\GitHub\\Car_Rental_Website\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV.csproj",
       "projectName": "Sauraav_POE_CLDV",
-      "projectPath": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV.csproj",
+      "projectPath": "C:\\Users\\Sauraav\\Documents\\GitHub\\Car_Rental_Website\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV.csproj",
       "packagesPath": "C:\\Users\\Sauraav\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sauraav\\Documents\\GitHub\\cldv6211---cloud-development---poe-Saupernova13\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\obj\\",
+      "outputPath": "C:\\Users\\Sauraav\\Documents\\GitHub\\Car_Rental_Website\\Sauraav_POE_CLDV\\Sauraav_POE_CLDV\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -11688,6 +11723,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.21, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.19, )"
@@ -11734,7 +11773,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

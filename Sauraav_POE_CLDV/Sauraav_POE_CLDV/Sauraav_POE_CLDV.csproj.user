@@ -14,7 +14,7 @@
     <_SelectedScaffolderID>IdentityScaffolder</_SelectedScaffolderID>
     <_SelectedScaffolderCategoryPath>root/Identity</_SelectedScaffolderCategoryPath>
     <WebStackScaffolding_ViewDialogWidth>800</WebStackScaffolding_ViewDialogWidth>
-    <NameOfLastUsedPublishProfile>C:\Users\Sauraav\Documents\GitHub\cldv6211---cloud-development---poe-Saupernova13\Sauraav_POE_CLDV\Sauraav_POE_CLDV\Properties\PublishProfiles\SauraavPOECLDV20230627111310 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\Sauraav\Documents\GitHub\Car_Rental_Website\Sauraav_POE_CLDV\Sauraav_POE_CLDV\Properties\PublishProfiles\SauraavPOECLDV20230831025859 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

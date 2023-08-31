@@ -1,5 +1,5 @@
-The site currently does not have hosting. You may watch the demo video to see it's full functionality, or
-run the source code locally.
+Please feel free to demo my site, it's live!:
+https://sauraavpoecldv20230831025859.azurewebsites.net/
 
 Attributions and Plugins:
 - Microsoft Azure

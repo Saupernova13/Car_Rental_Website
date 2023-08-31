@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Sauraav_POE_CLDV/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.21",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.19",
           "Microsoft.AspNetCore.Identity.UI": "6.0.18",
           "Microsoft.EntityFrameworkCore": "7.0.7",
@@ -635,6 +636,17 @@
           "lib/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.1923.31806"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.21": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.7"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
+            "assemblyVersion": "6.0.21.0",
+            "fileVersion": "6.0.2123.36438"
           }
         }
       },
@@ -3129,6 +3141,13 @@
       "sha512": "sha512-IwPYhRNK3U9VOmEO8Dfl6t32CbQCsWrCFu4VC5A46nW+q6EBSNJ1k9ikWCCaQzWtrisI1mz4Hy1R6UFF7KywFQ==",
       "path": "microsoft.aspnetcore.cryptography.keyderivation/6.0.19",
       "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.6.0.19.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YpALB73Q1CK6ZXAbCOigTOtnQG5j5yazh5j02Ns/VvvxAu03nf5ojfqmA/QGH0jYZ9Q0OE9QN0pfdwSHSp50Pw==",
+      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/6.0.21",
+      "hashPath": "microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.21.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.19": {
       "type": "package",
